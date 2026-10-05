@@ -1,6 +1,6 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="robots" content="noindex, nofollow">
 <title>Gaian Anchor Brief</title>
+<meta name="robots" content="noindex, nofollow">
 <meta name="description" content="Gaian's SCF Build proposal: a Stellar anchor that lets any Stellar wallet pay Vietnamese bank QR codes, on a payout rail live since November 2025.">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Gaian">
@@ -68,6 +68,8 @@ figure.tl{margin-top:2pt;margin-bottom:8pt}
 svg .tm{font-size:12px;font-weight:600;fill:var(--accent);text-anchor:middle} svg .tp{font-size:12px;font-weight:600;fill:var(--fg)}
 svg .wk{font-size:10.5px;fill:var(--muted)} svg .ax{stroke:var(--rule);stroke-width:1.5} svg .pt{fill:var(--accent)}
 svg .band{stroke:none} svg .bt{fill:#eef4f7} svg .bm{fill:#e2eee3}
+.sec-eyebrow{margin-top:22pt;padding-top:14pt;border-top:1.5pt solid var(--fg)}
+h2.sec{font:700 17pt/1.15 "Source Serif 4",Georgia,serif;letter-spacing:0;text-transform:none;color:var(--fg);margin-top:0;margin-bottom:8pt}
 .team{display:grid;grid-template-columns:repeat(3,1fr);gap:10pt;margin-top:2pt;margin-bottom:4pt}
 .team>div{border-top:1.5pt solid var(--accent);padding-top:3pt;font-size:8.8pt;line-height:1.4}
 .team .r{font:600 6.8pt "IBM Plex Sans",sans-serif;text-transform:uppercase;letter-spacing:.05em;color:var(--accent)}
@@ -87,7 +89,7 @@ tr.mo td{font-size:7.8pt;color:var(--muted);padding-top:2pt} tr.mo span{font-wei
 tr.tot td{border-bottom:none;font-weight:600;border-top:1pt solid var(--fg)}
 </style></head><body>
 
-<section class="page">
+<section class="page" data-toc-root>
 <p class="eyebrow">Stellar Community Fund · Build proposal · Integration Track</p>
 <h1>Gaian Anchor: Vietnam, payable from any Stellar wallet</h1>
 <p class="lede">In Vietnam, shops, taxis and street stalls take payment by bank QR code, and only someone with a Vietnamese bank account can pay one. Gaian already lets people pay those codes with USDC. This proposal opens that door to every Stellar wallet.</p>
@@ -151,11 +153,8 @@ tr.tot td{border-bottom:none;font-weight:600;border-top:1pt solid var(--fg)}
 </ol><p>Both ship on testnet first, then on mainnet with three external wallets.</p></div>
 </div>
 </div>
-</section>
-
-<section class="page">
-<p class="eyebrow">Scope and budget</p>
-<h1 style="font-size:17pt">Milestones and price by deliverable</h1>
+<p class="eyebrow sec-eyebrow">Scope and budget</p>
+<h2 class="sec" data-toc="Timeline and price by deliverable">Milestones and price by deliverable</h2>
 <figure class="tl"><svg viewBox="0 0 720 166" role="img" aria-label="Timeline: M1 anchor on testnet by week 8, M2 every wallet and DEX swaps on testnet by week 14, M3 security by week 17, M4 mainnet launch at week 17 with a volume window to week 26. Payments of 10, 20, 30 and 40 percent, the last after $20,000 of real customer payments.">
 <rect x="10.0" y="8" width="455.7" height="20" rx="4" class="band bt"/><text x="238.8" y="22" class="c s">On testnet: test payments only, no real VND moves</text>
 <rect x="469.7" y="8" width="240.3" height="20" rx="4" class="band bm"/><text x="588.9" y="22" class="c s">On mainnet: real VND payouts</text>
@@ -177,4 +176,100 @@ tr.tot td{border-bottom:none;font-weight:600;border-top:1pt solid var(--fg)}
 <tr class="tot"><td></td><td>Total requested</td><td class="amt">$82,950</td></tr>
 </tbody></table></div>
 </section>
+<!-- toc-nav:start -->
+<style>
+/* Mục lục tự dựng từ heading: thanh dính trên đầu (gập/mở) khi màn hẹp, sidebar cố định bên trái khi màn rộng. Dùng token màu của trang nếu có. */
+.tocnav{--tn-paper:var(--paper,#fff);--tn-rule:var(--rule,#d9d4c8);--tn-fg:var(--fg,#1b1f26);--tn-muted:var(--muted,#5a6270);--tn-accent:var(--accent,#0b5d7a);--tn-soft:var(--accent-soft,#e3eef3);
+ font-family:var(--sans,system-ui,-apple-system,sans-serif);font-size:13px;line-height:1.35;color:var(--tn-fg);background:var(--tn-paper);border:1px solid var(--tn-rule);
+ position:sticky;top:env(safe-area-inset-top,0px);z-index:20;margin:0 auto 14px;box-sizing:border-box;min-width:0}
+.tocnav summary{cursor:pointer;padding:10px 14px;font-weight:600;font-size:12px;letter-spacing:.07em;text-transform:uppercase;color:var(--tn-accent);display:flex;gap:10px;align-items:baseline;list-style-position:inside}
+.tocnav summary .tn-here{font-weight:400;letter-spacing:0;text-transform:none;color:var(--tn-muted);overflow:hidden;text-overflow:ellipsis;white-space:nowrap;min-width:0}
+.tocnav ol{list-style:none;margin:0;padding:0 8px 10px;max-height:60vh;overflow-y:auto}
+.tocnav li{margin:0}
+.tocnav a{display:block;padding:4px 8px;color:var(--tn-fg);text-decoration:none;word-break:normal;border-left:2px solid transparent}
+.tocnav a:hover{background:var(--tn-soft)}
+.tocnav a:focus-visible,.tocnav summary:focus-visible{outline:2px solid var(--tn-accent);outline-offset:-2px}
+.tocnav a.l1{font-weight:600;margin-top:10px;padding-top:8px;border-top:1px solid var(--tn-rule)}
+.tocnav li:first-child a.l1{margin-top:0;border-top:0}
+.tocnav a.l1 small{display:block;font-weight:500;font-size:10.5px;letter-spacing:.07em;text-transform:uppercase;color:var(--tn-muted)}
+.tocnav a.l2{padding-left:14px}
+.tocnav a.l3{padding-left:26px;color:var(--tn-muted);font-size:12.5px}
+.tocnav a.on{border-left-color:var(--tn-accent);background:var(--tn-soft);color:var(--tn-accent)}
+.tocnav-target{scroll-margin-top:calc(env(safe-area-inset-top,0px) + 60px)}
+@media (min-width:1180px){
+ body.has-tocnav{padding-left:288px}
+ .tocnav{position:fixed;left:16px;top:calc(env(safe-area-inset-top,0px) + 16px);width:256px;margin:0;max-width:none!important}
+ .tocnav summary{pointer-events:none;list-style:none}
+ .tocnav summary::-webkit-details-marker{display:none}
+ .tocnav summary .tn-here{display:none}
+ .tocnav ol{max-height:calc(100vh - 100px)}
+ .tocnav-target{scroll-margin-top:calc(env(safe-area-inset-top,0px) + 16px)}
+}
+@media print{.tocnav{display:none}body.has-tocnav{padding-left:0}}
+</style>
+<script>
+(function(){
+  // Gốc nội dung: [data-toc-root] nếu có, không thì khối bài viết đầu tiên tìm thấy
+  var root=document.querySelector('[data-toc-root]')||document.querySelector('article.paper')||document.querySelector('article')||document.querySelector('main')||document.querySelector('.wrap')||document.body;
+  var hs=[].slice.call(root.querySelectorAll('h1,h2,h3')).filter(function(h){return !h.closest('.tocnav')&&!h.hasAttribute('data-toc-skip')});
+  var h1s=hs.filter(function(h){return h.tagName==='H1'});
+  if(h1s.length===1)hs=hs.filter(function(h){return h.tagName!=='H1'}); // một h1 duy nhất là tiêu đề trang, không đưa vào mục lục
+  if(hs.length<3)return;
+  var top=Math.min.apply(null,hs.map(function(h){return +h.tagName.charAt(1)}));
+  var partWord=root.getAttribute('data-toc-part')||document.body.getAttribute('data-toc-part')||'Part';
+  var title=document.documentElement.lang==='en'?'Contents':(document.body.getAttribute('data-toc-title')||'Mục lục');
+
+  // Nhãn: data-toc nếu có, không thì chữ của heading, bỏ phần trang trí (số lề, nhãn milestone)
+  function label(h){
+    if(h.dataset.toc)return h.dataset.toc;
+    var c=h.cloneNode(true);
+    [].forEach.call(c.querySelectorAll('[aria-hidden="true"],.ref,.ms,small,[data-toc-omit]'),function(e){e.remove()});
+    return [].map.call(c.childNodes,function(n){return n.textContent.trim()}).filter(Boolean).join(' ').replace(/\s+/g,' ');
+  }
+
+  var nav=document.createElement('nav');nav.className='tocnav';nav.setAttribute('aria-label',title);
+  nav.innerHTML='<details><summary><span></span><span class="tn-here"></span></summary><ol></ol></details>';
+  var d=nav.querySelector('details'),list=nav.querySelector('ol'),here=nav.querySelector('.tn-here');
+  nav.querySelector('summary span').textContent=title;
+  document.body.insertBefore(nav,document.body.firstChild);
+  document.body.classList.add('has-tocnav');
+
+  var wide=window.matchMedia('(min-width:1180px)');
+  function fit(){d.open=wide.matches;nav.style.maxWidth=wide.matches?'':root.getBoundingClientRect().width+'px'}
+  fit();if(wide.addEventListener)wide.addEventListener('change',fit);window.addEventListener('resize',fit);
+
+  var links=[],used={},part=0;
+  hs.forEach(function(h,i){
+    if(!h.id||used[h.id])h.id='sec-'+(i+1);
+    used[h.id]=1;h.classList.add('tocnav-target');
+    var lv=+h.tagName.charAt(1)-top+1,li=document.createElement('li'),a=document.createElement('a');
+    a.href='#'+h.id;a.className='l'+Math.min(lv,3);
+    if(h.tagName==='H1'&&h1s.length>1){part++;var s=document.createElement('small');s.textContent=partWord+' '+part;a.appendChild(s)}
+    a.appendChild(document.createTextNode(label(h)));
+    a.addEventListener('click',function(e){
+      e.preventDefault();
+      if(!wide.matches)d.open=false;
+      var rm=window.matchMedia('(prefers-reduced-motion:reduce)').matches;
+      h.scrollIntoView({behavior:rm?'auto':'smooth',block:'start'});
+    });
+    li.appendChild(a);list.appendChild(li);links.push(a);
+  });
+
+  // Đánh dấu mục đang đọc
+  var cur=-1;
+  function spy(){
+    var line=wide.matches?90:nav.offsetHeight+30,k=0;
+    for(var i=0;i<hs.length;i++){if(hs[i].getBoundingClientRect().top<=line)k=i;else break}
+    if(k===cur)return;cur=k;
+    links.forEach(function(a,i){a.classList.toggle('on',i===k)});
+    here.textContent=links[k].lastChild.textContent;
+    if(wide.matches){var a=links[k];
+      if(a.offsetTop<list.scrollTop||a.offsetTop+a.offsetHeight>list.scrollTop+list.clientHeight)list.scrollTop=a.offsetTop-list.clientHeight/2}
+  }
+  var t=false;
+  window.addEventListener('scroll',function(){if(t)return;t=true;requestAnimationFrame(function(){t=false;spy()})},{passive:true});
+  spy();
+})();
+</script>
+<!-- toc-nav:end -->
 </body></html>
